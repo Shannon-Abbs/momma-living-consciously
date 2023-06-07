@@ -84,8 +84,330 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   AUTHOR'S CUSTOM STYLES
    ========================================================================== */
+
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'adobe-garamond-pro';
+  font-size: 1em;
+  color: #141012;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #ef9791;
+  text-decoration: none;
+}
+
+h1 {
+  color: #141012;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2em;
+  line-height: 43px;
+  font-weight: 500;
+}
+
+h2 {
+  color: #141012;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+h3,
+h4 {
+  font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: #ef9791;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 18px;
+  color: #141012;
+  font-family: 'adobe-garamond-pro';
+  font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+  line-height: 15px;
+  text-align: left;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+input {
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #141012;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50 0;
+}
+
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.header {
+  color: #141012;
+  font-size: 1.875em;
+  font-weight: 200;
+  text-align: left;
+
+}
+
+header {
+  padding: 15px 0;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+
+header figure {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-flow: row wrap;
+  padding-top: 5%;
+}
+
+
+
+header nav {
+  width: 80%;
+  font-size: 1.125em;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  color: #141012;
+  font-family: 'Cormorant Garamond', serif;
+
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+  width: 100%;
+  list-style-type: none;
+  text-transform: capitalize;
+  align-items: center;
+  flex-flow: row wrap;
+  color:#141012;  
+}
+
+.header-divider {
+  background: #141012;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+
+footer {
+  text-align: center;
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 90%;
+  margin: 55px 0;
+}
+
+footer nav {
+  width: 100%;
+  font-size: 1.125em;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  color: #141012;
+  font-family: 'Cormorant Garamond', serif;
+
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style-type: none;
+  text-transform: capitalize;
+  align-items: center;
+  flex-flow: row wrap;
+  color:#141012;  
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  background-color: #141012;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+/* -------------------- Mobile - HOME PAGE -------------------- */
+
+/** Blog Summary **/
+
+summary .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.summary figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
+}
+.summary .blog-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.summary article {
+  width: 63%;
+  margin: 20px 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.features h2 {
+  margin: 0;
+}
+
+
+/*** Book Summary ***/
+
+
+.book-summary {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background:#ffcfcc;
+}
+
+.book-summary h1 {
+  display:flex;
+  justify-content: center;
+  line-height: 15px;
+  font-weight: bolder;
+  padding-top: 5%;  
+}
+
+.book-summary h2 {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 20px 0;
+  font-family: bolder;
+}
+
+.book-summary ul {
+  justify-content: center;
+  align-content: center;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+
+.book-summary .book-summary-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.book-summary figure {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 63%;
+  margin: 20px 0;
+}
+
 
 /* ==========================================================================
    Helper classes
