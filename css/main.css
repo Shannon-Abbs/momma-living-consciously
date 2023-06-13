@@ -94,7 +94,7 @@ html {
 }
 
 body {
-  font-family: 'adobe-garamond-pro';
+  font-family: "adobe-garamond-pro";
   font-size: 1em;
   color: #141012;
 }
@@ -111,7 +111,7 @@ a {
 
 h1 {
   color: #141012;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 2em;
   line-height: 43px;
   font-weight: 500;
@@ -119,7 +119,7 @@ h1 {
 
 h2 {
   color: #141012;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-style: italic;
   font-weight: 900;
   text-transform: capitalize;
@@ -127,29 +127,30 @@ h2 {
 
 h3,
 h4 {
-  font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: 1px;
-    color: #ef9791;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ef9791;
 }
 
 p {
-  font-size: 1.125em;
+  font-size: 1em;
   line-height: 18px;
+  letter-spacing: 1px;
   color: #141012;
-  font-family: 'adobe-garamond-pro';
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: normal;
   text-transform: none;
-  line-height: 15px;
   text-align: left;
 }
+
+
 
 strong {
   font-weight: bold;
 }
-
 
 input {
   font-size: 1.125em;
@@ -167,13 +168,13 @@ figure {
 
 address {
   font-style: normal;
+  letter-spacing: 2px;
 }
 
 .content-wrapper {
-  width: 90%;
+  width: 95%;
   margin: 50 0;
 }
-
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 
@@ -190,11 +191,10 @@ footer {
   font-size: 1.875em;
   font-weight: 200;
   text-align: left;
-
 }
 
 header {
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 header .content-wrapper {
@@ -205,9 +205,8 @@ header .content-wrapper {
   margin: 0;
 }
 
-
 header figure {
-  width: 35%;
+  width: 55%;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -215,38 +214,34 @@ header figure {
   padding-top: 5%;
 }
 
-
-
 header nav {
-  width: 80%;
-  font-size: 1.125em;
+  width: 90%;
+  font-size: .90em;
   font-weight: 700;
   display: flex;
   justify-content: center;
-  color: #141012;
-  font-family: 'Cormorant Garamond', serif;
-
+  
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
-  padding: 5%;
+  justify-content: space-between;
+  padding: 10%;
   width: 100%;
   list-style-type: none;
-  text-transform: capitalize;
   align-items: center;
-  flex-flow: row wrap;
-  color:#141012;  
+  flex-flow: column wrap;
+  font-family: 'Poppins', sans-serif;
 }
+
+
 
 .header-divider {
   background: #141012;
   height: 1px;
   width: 100%;
-  margin: 10px 0 20px 0;
+  
 }
-
 
 footer {
   text-align: center;
@@ -258,33 +253,36 @@ footer p {
 }
 
 footer .content-wrapper {
-  width: 90%;
+  width: 100%;
   margin: 55px 0;
 }
 
-footer nav {
-  width: 90%;
-  font-size: 1.125em;
-  font-weight: 700;
+.legal-docs {
+  width: 100%;
+  font-size: .75em;
   display: flex;
   justify-content: center;
-  color: #141012;
-  font-family: 'Cormorant Garamond', serif;
-
 }
 
-footer nav ul {
+.legal-docs p {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   list-style-type: none;
   text-transform: capitalize;
   align-items: center;
   flex-flow: row wrap;
-  color:#141012;  
+ 
 }
 
+footer .contact {
+  margin-bottom: 30px;
+}
 
+footer .contact address {
+  display:flex;
+  justify-content: center;
+}
 
 footer .social-icons {
   display: flex;
@@ -327,7 +325,6 @@ summary .content-wrapper {
   width: 100%;
 }
 
-
 .summary figure {
   display: flex;
   justify-content: center;
@@ -348,73 +345,70 @@ summary .content-wrapper {
   text-align: center;
 }
 
-.summary h3 {
-  margin: 0;
-  border: solid;
-  border-color: #141012;
+.summary h4 {
+  margin: 20px 0;
+  border:#141012 solid;
   border-radius: 10%;
   
 }
 
-
-/*** Book Summary ***/
-
+/* Book Summary */
 
 .book-summary {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background:#ffcfcc;
+  background:#141012;
+
 }
 
-.book-summary h1 {
-  display:flex;
-  justify-content: center;
-  line-height: 15px;
-  font-weight: bolder;
-  padding-top: 5%;  
-}
-
-.book-summary h2 {
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  margin: 20px 0;
-  font-family: bolder;
-}
-
-.book-summary ul {
-  justify-content: center;
-  align-content: center;
-  line-height: 25px;
-  font-weight: bold;
-}
-
-
-.book-summary .book-summary-items {
+.book-summary .blog-item {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.features article {
-  width: 73%;
-  margin: 30px 0;
+.book-summary .blog-item figure {
+  width: 65%;
+}
+
+
+.book-summary h1, h2, h3, ol {
+  color:#fff;
+  
+}
+
+.book-summary h1 {
+  margin-bottom: 20px;
+  line-height: 30px;
+  display: flex;
   justify-content: center;
+  
+}
+
+.book-summary h3 {
   text-align: center;
 }
 
-
-.book-summary figure {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
+.book-summary ol li {
+  width: 100%;
   margin: 20px 0;
- 
+  font-size: 1em;
+  font-weight: 600;
+  color:#ef9791;
 }
 
+/* Footer */
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer p {
+  margin: 0;
+}
 
 /* ==========================================================================
    Helper classes
@@ -504,6 +498,134 @@ summary .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
+
+   @media only screen and (min-width: 768px) {
+    /*Tablet styles here*/
+  
+    /* General styles */
+    .content-wrapper {
+      max-width: 640px;
+      margin: 20px 0;
+    }
+  
+    h1 {
+      font-size: 3em;
+      line-height: 48px;
+    }
+  
+    h2 {
+      font-size: 2em;
+      line-height: 48px;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+      line-height: 30px;
+    }
+  
+    /* Header */
+    header {
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+  
+    header .content-wrapper {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    header figure {
+      width: 25%;
+    }
+  
+    header nav {
+      width: 80%;
+    }
+  
+    header nav ul {
+
+      justify-content: space-between;
+      flex-flow: row;
+    }
+  
+
+  
+    /* ==========================================================================
+       Home Page
+       ========================================================================== */
+  
+    
+  
+    /* Blog Summary */
+    .summary article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      flex-basis: 30%;
+      padding: 1%;
+    }
+  
+     
+     /* Book Summary */
+  .book-summary article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .book-summary h1 {
+    width: 100%;
+  }
+
+  .book-summary article figure,
+  .book-summary article div {
+    width: 95%;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+
+
+  .book-summary h3 {
+    width: 90%;
+    margin: 10;
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+    margin: 50px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .footer .contact h4 {
+    font-size: 1.5em;
+  }
+
+  footer p {
+    line-height: 18px;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+   
+  }
+
+  footer .copyright {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    
+  }
+
+   
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
@@ -589,4 +711,3 @@ summary .content-wrapper {
     page-break-after: avoid;
   }
 }
-
