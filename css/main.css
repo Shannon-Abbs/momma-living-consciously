@@ -91,12 +91,13 @@ textarea {
 
 html {
   font-size: 16px;
+  background-color: #fffefa;
 }
 
 body {
-  font-family: "adobe-garamond-pro";
+  font-family: "Poppins", sans-serif;
   font-size: 1em;
-  color: #141012;
+  color: #44383e;
 }
 
 ul,
@@ -110,16 +111,16 @@ a {
 }
 
 h1 {
-  color: #141012;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 2em;
-  line-height: 43px;
-  font-weight: 500;
+  color: #44383e;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  line-height: 45px;
+  font-weight: 900;
 }
 
 h2 {
-  color: #141012;
-  font-family: "Cormorant Garamond", serif;
+  color: #44383e;
+  font-family: "Poppins", sans-serif;
   font-style: italic;
   font-weight: 900;
   text-transform: capitalize;
@@ -127,7 +128,7 @@ h2 {
 
 h3,
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: 1px;
@@ -135,18 +136,16 @@ h4 {
 }
 
 p {
-  font-size: 1em;
-  line-height: 18px;
+  font-size: .75em;
+  line-height: 20px;
   letter-spacing: 1px;
-  color: #141012;
-  font-family: 'Poppins', sans-serif;
+  color: #44383e;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
   text-transform: none;
   text-align: left;
 }
-
-
 
 strong {
   font-weight: bold;
@@ -155,7 +154,7 @@ strong {
 input {
   font-size: 1.125em;
   font-weight: 500;
-  color: #141012;
+  color: #44383e;
 }
 
 img {
@@ -172,9 +171,103 @@ address {
 }
 
 .content-wrapper {
-  width: 95%;
-  margin: 50 0;
+  width: 100%;
+  margin: 0%;
 }
+
+
+/*--BUTTONS--*/
+
+/*-read & learn-*/
+
+.read-button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ef9791;
+  border: none;
+  color: #fffefa;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.read-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.read-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.read-button:hover span {
+  padding-right: 25px;
+}
+
+.read-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*buy now button*/
+
+ .buy-button {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #ffe397;
+  border: none;
+  color: #44383e;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.buy-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buy-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buy-button:hover span {
+  padding-right: 25px;
+}
+
+.buy-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 
@@ -184,17 +277,11 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.header {
-  color: #141012;
-  font-size: 1.875em;
-  font-weight: 200;
-  text-align: left;
+  background-color: #fffefa;
 }
 
 header {
-  padding: 5px 0;
+  padding: 0px 0;
 }
 
 header .content-wrapper {
@@ -202,60 +289,241 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
+  margin: 20px;
 }
 
 header figure {
-  width: 55%;
+  width: 35%;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   flex-flow: row wrap;
-  padding-top: 5%;
 }
 
+/*** Don't touch the nav! ***/
+
 header nav {
-  width: 90%;
+  width: 55%;
   font-size: .90em;
   font-weight: 700;
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-between;
-  padding: 10%;
-  width: 100%;
-  list-style-type: none;
   align-items: center;
   flex-flow: column wrap;
-  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  padding-left: 0%;
 }
-
 
 
 .header-divider {
-  background: #141012;
+  background: #44383e;
   height: 1px;
   width: 100%;
-  
+  margin: 10px 0 10px 0;
 }
+
 
 footer {
   text-align: center;
   flex-direction: column;
+  background-color: #44383e;
 }
 
 footer p {
   margin: 0;
+  color:#fffefa;
 }
 
 footer .content-wrapper {
   width: 100%;
   margin: 55px 0;
 }
+
+footer .contact {
+  margin-bottom: 10px;
+}
+
+footer .contact address {
+  display: flex;
+  justify-content: center;
+  color: #fffefa;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  background-color: #fffefa;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
+footer .copyright {
+  margin: 20px 0;
+  color:#fffefa;
+}
+
+
+/* -------------------- Mobile - HOME PAGE -------------------- */
+
+/** Blog Summary **/
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  background: url(../img/hero.png);
+  min-height: 500px;  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #333;
+}
+
+.hero-area h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fffefa;
+  line-height: 60px;
+  text-align: center;
+  padding-bottom: 10px;
+ margin: 0;
+}
+
+.hero-area h3 {
+  
+  justify-content: center;
+  align-items: center;
+  color:#fffefa;
+  text-align: center;
+  margin:0;
+ 
+}
+
+
+summary .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.summary .blog-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.summary article {
+ width: 80%;
+  margin: 20px 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.summary h4 {
+  margin: 20px 0;
+  border: #44383e solid;
+  border-radius: 10%;
+}
+
+/* Book Summary */
+
+.book-summary {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: #44383e;
+  margin-bottom: 20px;
+
+}
+
+.book-summary .bs-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+.book-summary h1 {
+  margin-bottom: 20px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.book-summary .bs-two h3 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  color:#fffefa;
+
+}
+
+
+.book-summary ul li {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 1em;
+  font-weight: 600;
+  color: #ef9791;
+}
+
+/* SideBar */
+
+.sidebar h2{
+  color:#44383e;
+}
+
+.sidebar {
+  margin: 1% 3% 0 3%;
+  padding: 1%;
+ }
+
+ .sidebar-item {
+  display: flex;
+  justify-content: center;
+ }
+
+.sidebar-item figure {
+  width: 40%;
+}
+
+.sidebar-text h2, p {
+  text-align: center;
+}
+
+
+
+/* Legal Docs */
 
 .legal-docs {
   width: 100%;
@@ -272,143 +540,168 @@ footer .content-wrapper {
   text-transform: capitalize;
   align-items: center;
   flex-flow: row wrap;
- 
+  font-weight: bolder;
 }
 
-footer .contact {
-  margin-bottom: 30px;
-}
-
-footer .contact address {
-  display:flex;
-  justify-content: center;
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social-icons p {
-  background-color: #141012;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .social-icons p i {
-  font-size: 1.3125em;
-}
-
-footer .copyright {
-  margin: 20px 0;
-}
-
-/* -------------------- Mobile - HOME PAGE -------------------- */
-
-/** Blog Summary **/
-
-summary .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-.summary {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.summary figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-}
-.summary .blog-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.summary article {
-  width: 60%;
-  margin: 20px 0;
-  justify-content: center;
-  text-align: center;
-}
-
-.summary h4 {
-  margin: 20px 0;
-  border:#141012 solid;
-  border-radius: 10%;
-  
-}
-
-/* Book Summary */
-
-.book-summary {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  background:#141012;
-
-}
-
-.book-summary .blog-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.book-summary .blog-item figure {
-  width: 65%;
-}
-
-
-.book-summary h1, h2, h3, ol {
-  color:#fff;
-  
-}
-
-.book-summary h1 {
-  margin-bottom: 20px;
-  line-height: 30px;
-  display: flex;
-  justify-content: center;
-  
-}
-
-.book-summary h3 {
-  text-align: center;
-}
-
-.book-summary ol li {
-  width: 100%;
-  margin: 20px 0;
-  font-size: 1em;
-  font-weight: 600;
-  color:#ef9791;
-}
 
 /* Footer */
 
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
+
 }
 
 footer p {
   margin: 0;
 }
+
+
+/**************** BOOK PAGE - MOBILE ***************/
+main h1 {
+  text-align: center;
+  color:#44383e;
+
+}
+
+#sales-intro {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+.quick-intro-parent .qi-child {
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column wrap;
+}
+
+.quick-intro-parent .sales-description, h1, h2, h3, p, ul {
+  text-align: center;
+  padding: 1%;
+  margin: 0;
+}
+
+.quick-intro-parent h2, h3 {
+  color:#ef9791;
+  
+}
+
+
+.quick-intro-parent .qi-child ul {
+  padding: 2%;
+  color:#44383e;
+}
+
+
+#grad1 {
+  height:fit-content;
+  background-color: pink; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, pink , lightyellow);
+   margin: 5%;
+}
+
+.qi-review-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1%;
+  border: #44383e inset;
+}
+
+.qi-review-child strong {
+  font-size: large;
+}
+
+.qi-review-child p {
+  color:#44383e;
+}
+
+
+.qi-preview-child h2, .iframe{
+  display:flex;
+  justify-content: center;
+  color:#44383e;
+}
+
+
+#sales-description {
+  background-color: #44383e;
+  padding: 3%;
+}
+
+.sd-flex-1 {
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column wrap;
+}
+
+.sd-flex-1, .sd-flex-2, h1, h2, p{
+  color:#fffefa;
+}
+
+
+.sd-flex-2 {
+  padding-top: 2%;
+
+}
+.sd-flex-2 h1 {
+  padding-top: 5%;
+  color:#ef9791;
+  }
+
+.sd-flex-2 ul {
+text-align: left;
+
+}  
+
+#for-you {
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+  text-align: center;
+}
+
+.fy-text {
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column wrap;
+}
+
+.fy-text p {
+  text-align: center;
+  color:#44383e;
+}
+
+.fy-text h1, strong {
+  color:#ef9791;
+}
+
+.book-banner {
+    display: flex;
+    justify-content: center;
+    
+    background: url(../img/book-banner.png);
+    min-height: 200px;  
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333;
+  }
+
+
+.sidebar-text p {
+  color:#44383e;
+}
+
+
+
 
 /* ==========================================================================
    Helper classes
@@ -498,133 +791,318 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
 
-   @media only screen and (min-width: 768px) {
-    /*Tablet styles here*/
-  
-    /* General styles */
-    .content-wrapper {
-      max-width: 640px;
-      margin: 20px 0;
-    }
-  
-    h1 {
-      font-size: 3em;
-      line-height: 48px;
-    }
-  
-    h2 {
-      font-size: 2em;
-      line-height: 48px;
-    }
-  
-    h3 {
-      font-size: 1.5em;
-      line-height: 30px;
-    }
-  
-    /* Header */
-    header {
-      justify-content: space-around;
-      padding: 10px 0;
-    }
-  
-    header .content-wrapper {
-      width: 100%;
-      justify-content: space-between;
-    }
-  
-    header figure {
-      width: 25%;
-    }
-  
-    header nav {
-      width: 80%;
-    }
-  
-    header nav ul {
+  /* General styles */
 
-      justify-content: space-between;
-      flex-flow: row;
-    }
-  
+  .content-wrapper {
+    max-width: 640px;
+  }
 
-  
-    /* ==========================================================================
+  h1 {
+    font-size: 3em;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 2em;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 30px;
+  }
+
+  /* Header */
+  header {
+    justify-content: space-around;
+    
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header figure {
+    width: 20%;
+  }
+
+  header nav {
+    width: 75%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 8%;
+    flex-flow: row wrap;
+  }
+
+  .header-divider {
+    width: 100%;
+  }
+
+
+/* ==========================================================================
        Home Page
        ========================================================================== */
+
+
+
+/* Blog Summary */
+
+.summary article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-basis: 30%;
+  padding: 1%;
+
+}
+
+/* Book Summary */
+
+.book-summary {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row;
+}
+
+.bs-one {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.bs-two {
+  flex-flow: column wrap;
+  width: 60%;  
+}
+
+.book-summary h1 {
+  width: 100%;
+}
+
+
+.book-summary h3 {
+  width: 90%;
+  margin: 10;
+}
+
+
+
+/*Sidebar */
+
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3% 0 3%;
+}
+
+.sidebar-item {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-item figure {
+  width: 80%;
+  align-content: center;  
+}
+
+.sidebar-text{
+  width: 70%;
+  padding-top: 2%;
+}
+
+.sidebar-text h2 {
+  margin:0;
+}
+
+.sidebar-text p {
+  margin: 0%;
+}
+
+
+/* Footer */
+footer .content-wrapper {
+  width: 65%;
+  margin: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .contact h4 {
+  font-size: 1.5em;
+}
+
+footer p {
+  line-height: 18px;
+}
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+footer .copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*------- Book Sales Page Tablet --------------*/
+
+.quick-intro-parent {
+  display: flex;
+  flex-flow:row wrap;
+  margin: 1%;
+}
+
+.qi-child {
+  flex-flow: column wrap;
+  width: 60%;
+}
+
+.qi-preview-child {
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.sd-flex-2 ul {
+  padding-left: 20%;
+}
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+
+  /*Base Styles*/
+
+  h1 {
+    font-size: 3.75em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 24px;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
   
-    
-  
-    /* Blog Summary */
-    .summary article {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column wrap;
-      flex-basis: 30%;
-      padding: 1%;
-    }
-  
-     
-     /* Book Summary */
-  .book-summary article {
+  }
+
+  header figure {
+    width: 15%;
     display: flex;
-    justify-content: space-between;
-  }
-
-  .book-summary h1 {
-    width: 100%;
-  }
-
-  .book-summary article figure,
-  .book-summary article div {
-    width: 95%;
-    justify-content: space-between;
-    align-content: center;
-  }
-
-
-
-  .book-summary h3 {
-    width: 90%;
-    margin: 10;
-  }
-
-  /* Footer */
-  footer .content-wrapper {
-    width: 65%;
-    margin: 50px 0;
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-  }
-  
-
-  .footer .contact h4 {
-    font-size: 1.5em;
+    flex-flow: row wrap;
   }
 
-  footer p {
-    line-height: 18px;
+
+  nav ul {
+    font-size: 1.25em;
+
   }
 
-  footer .contact {
-    margin-bottom: 0;
-   
-  }
-
-  footer .copyright {
+ 
+  main .hero-area {
     width: 100%;
-    display:flex;
-    justify-content: center;
-    
   }
 
-   
+  .summary article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 23%;
+    padding: 1%;
+  
+  }
+
+
+.book-summary p h2 {
+  padding: 3%;
+}
+
+/*--Sidebar--*/
+
+.sidebar-item figure {
+  width: 50%;
+}
+
+.sidebar-text {
+  width: 70%;
+}
+
+.sidebar-text h2, p {
+  text-align: left;
+}
+
+/*------------ Book Sales Page Laptop ------------*/
+.qi-child {
+  width: 50%;
+}
+.qi-preview-child {
+  width: 50%;
+  }
+
+ .qi-preview-child .iframe {
+  padding-top: 10%;
+ } 
+
+ 
+#sales-description {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+.sd-flex-1 {
+  display: flex;
+  flex-flow:row wrap;
+  margin: 1%;
+  width: 60%;
+}
+
+.sd-flex-2 {
+  width: 35%;
+  padding-top: 0;
+}
+
+.sd-flex-2 h1 {
+  font-size: larger;
+  color:#fffefa;
+}
+.sd-flex-2 ul {
+  color:#ef9791
+}
+
+
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
